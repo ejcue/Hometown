@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hometown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,197 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watertower" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-vc-N1i">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5y4-Yg-tBX">
+                                <rect key="frame" x="215" y="531" width="170" height="27"/>
+                                <color key="backgroundColor" red="1" green="0.15136084829999999" blue="0.1125612989" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="3uy-36-nVW"/>
+                                    <constraint firstAttribute="height" constant="27" id="yM6-SM-1cQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="FIND OUT MORE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="icy-n6-clN" kind="show" id="tnU-P2-LPG"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Zfe-lh-EnR">
+                                <rect key="frame" x="286" y="28" width="294" height="338"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zcK-wO-T7S">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OUTDOOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNz-Hc-lad">
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVENTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InE-M6-Wft">
+                                                <rect key="frame" x="0.0" y="21" width="116" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESERT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbT-3t-tyc">
+                                                <rect key="frame" x="0.0" y="42" width="69" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2j8-Te-t9N">
+                                        <rect key="frame" x="0.0" y="93" width="294" height="180"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ODESSA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xun-J4-OAN">
+                                                <rect key="frame" x="0.0" y="0.0" width="249" height="72"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEXAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmF-1Q-LCN">
+                                                <rect key="frame" x="0.0" y="72" width="294" height="108"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="90"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MqW-jq-sOm">
+                                        <rect key="frame" x="0.0" y="303" width="149" height="35"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="sRP-Aa-Reg">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEST TEXAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-HO-Jx4">
+                                                <rect key="frame" x="40" y="0.0" width="109" height="35"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YUH-vc-N1i" secondAttribute="bottom" id="0dh-qH-jfY"/>
+                            <constraint firstItem="Zfe-lh-EnR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="104-wT-g7h"/>
+                            <constraint firstItem="YUH-vc-N1i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="443-Kh-V2e"/>
+                            <constraint firstItem="5y4-Yg-tBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Us-sZ-Nfl"/>
+                            <constraint firstItem="Zfe-lh-EnR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SXa-7n-6Vz"/>
+                            <constraint firstItem="YUH-vc-N1i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f4I-ib-aDJ"/>
+                            <constraint firstItem="Zfe-lh-EnR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hva-QT-0eJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5y4-Yg-tBX" secondAttribute="bottom" constant="42" id="sNv-vR-9nq"/>
+                            <constraint firstAttribute="trailing" secondItem="YUH-vc-N1i" secondAttribute="trailing" id="vMT-cN-Oqb"/>
+                            <constraint firstItem="Zfe-lh-EnR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xDg-0o-Kvt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="104-wT-g7h"/>
+                                <exclude reference="xDg-0o-Kvt"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="moreBtn" destination="5y4-Yg-tBX" id="lnC-0a-qUN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+        <!--DetailVC View Controller-->
+        <scene sceneID="JxP-mq-yi7">
+            <objects>
+                <viewController id="icy-n6-clN" customClass="DetailVCViewController" customModule="Hometown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Tv-nr-c1H"/>
+                        <viewControllerLayoutGuide type="bottom" id="u9R-NJ-rxV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d1E-HD-F8P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Odessa_-0" translatesAutoresizingMaskIntoConstraints="NO" id="ao6-fk-7hu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT ODESSA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi2-Md-hDx">
+                                <rect key="frame" x="199" y="75" width="202" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ifs-W2-89O"/>
+                                    <constraint firstAttribute="width" constant="202" id="Q2T-yH-uVK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbX-Iu-VT5">
+                                <rect key="frame" x="31" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Dhq-p3-LqO"/>
+                                    <constraint firstAttribute="height" constant="30" id="UEJ-k8-YlC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="icy-n6-clN" eventType="touchUpInside" id="r8Z-eg-Nyb"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zaE-4b-NTQ">
+                                <rect key="frame" x="31" y="210" width="560" height="390"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POPULATION: 20,700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZS-Qo-enZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEC-Iw-z94">
+                                        <rect key="frame" x="0.0" y="31" width="560" height="359"/>
+                                        <mutableString key="text">Odessa is known for its cowboy culture, the legion of oil rigs that stand on top of dusty plains, and Friday Night Lights, a book and film based on one of the town’s high school football teams. Yet there’s more to this West Texas town than meets the eye. Spend some time here and you'll discover more than a few surprises, such as a working recreation of William Shakespeare’s Globe Theatre, a replica of Stonehenge, and second largest meteor crater in the United States. Not only that, but the Midland-Odessa area also has a thriving arts scene with top-class performers and a world-class performing arts center. All of these elements combine to make Odessa a top-class vacation destination that has something to offer everyone.</mutableString>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u9R-NJ-rxV" firstAttribute="top" secondItem="zaE-4b-NTQ" secondAttribute="bottom" id="7pS-a1-ctf"/>
+                            <constraint firstItem="FbX-Iu-VT5" firstAttribute="top" secondItem="4Tv-nr-c1H" secondAttribute="bottom" id="Clp-Tg-riy"/>
+                            <constraint firstItem="zaE-4b-NTQ" firstAttribute="leading" secondItem="d1E-HD-F8P" secondAttribute="leadingMargin" id="O4G-nh-wxa"/>
+                            <constraint firstItem="FbX-Iu-VT5" firstAttribute="leading" secondItem="d1E-HD-F8P" secondAttribute="leadingMargin" constant="11" id="PfO-0a-TNX"/>
+                            <constraint firstItem="xi2-Md-hDx" firstAttribute="centerX" secondItem="d1E-HD-F8P" secondAttribute="centerX" id="QDE-z1-ITP"/>
+                            <constraint firstAttribute="trailing" secondItem="ao6-fk-7hu" secondAttribute="trailing" id="VyM-di-5uM"/>
+                            <constraint firstItem="ao6-fk-7hu" firstAttribute="leading" secondItem="d1E-HD-F8P" secondAttribute="leading" id="d93-av-vzW"/>
+                            <constraint firstItem="xi2-Md-hDx" firstAttribute="top" secondItem="4Tv-nr-c1H" secondAttribute="bottom" constant="55" id="evH-Wz-mx0"/>
+                            <constraint firstItem="xi2-Md-hDx" firstAttribute="centerX" secondItem="d1E-HD-F8P" secondAttribute="centerX" id="iTn-pd-gHb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zaE-4b-NTQ" secondAttribute="trailing" id="ism-VU-698"/>
+                            <constraint firstItem="zaE-4b-NTQ" firstAttribute="top" secondItem="xi2-Md-hDx" secondAttribute="bottom" constant="115" id="nyk-32-y9F"/>
+                            <constraint firstItem="ao6-fk-7hu" firstAttribute="top" secondItem="d1E-HD-F8P" secondAttribute="top" id="w0K-7a-U3t"/>
+                            <constraint firstItem="u9R-NJ-rxV" firstAttribute="top" secondItem="ao6-fk-7hu" secondAttribute="bottom" id="xbt-7c-4r2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D27-1r-hbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="417"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Odessa_-0" width="500" height="318"/>
+        <image name="compass" width="35" height="35"/>
+        <image name="watertower" width="700" height="449"/>
+    </resources>
 </document>
